@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   resources :technologies
   resources :code_retreat_sessions
   resources :users
+  get 'build_teams', controller: :application
   get 'hello/world'
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
