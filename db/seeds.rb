@@ -21,3 +21,8 @@ Technology.create(name: 'Rust')
 Technology.create(name: 'Scala')
 Technology.create(name: 'Swift')
 Technology.create(name: 'Typescript')
+
+User.create(name: 'Sergei Krylov', trigram: 'SKR')
+User.create(name: 'Camille Leonard', trigram: 'CLE')
+User.create(name: 'Edgard Arakaki', trigram: 'EAR')
+User.create(name: 'Nicolas Daxhelet', trigram: 'NDA')
