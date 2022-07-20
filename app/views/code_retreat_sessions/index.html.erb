@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Code retreat sessions</h1>
+
+<div id="code_retreat_sessions">
+  <% @code_retreat_sessions.each do |code_retreat_session| %>
+    <%= render code_retreat_session %>
+    <p>
+      <%= link_to "Show this code retreat session", code_retreat_session %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New code retreat session", new_code_retreat_session_path %>

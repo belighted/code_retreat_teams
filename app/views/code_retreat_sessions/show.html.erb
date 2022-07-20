@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @code_retreat_session %>
+
+<div>
+  <%= link_to "Edit this code retreat session", edit_code_retreat_session_path(@code_retreat_session) %> |
+  <%= link_to "Back to code retreat sessions", code_retreat_sessions_path %>
+
+  <%= button_to "Destroy this code retreat session", @code_retreat_session, method: :delete %>
+</div>

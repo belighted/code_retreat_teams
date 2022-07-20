@@ -1,0 +1,32 @@
+<%= form_with(model: code_retreat_session) do |form| %>
+  <% if code_retreat_session.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(code_retreat_session.errors.count, "error") %> prohibited this code_retreat_session from being saved:</h2>
+
+      <ul>
+        <% code_retreat_session.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :performed_on, style: "display: block" %>
+    <%= form.date_field :performed_on %>
+  </div>
+
+  <div>
+    <%= form.label :title, style: "display: block" %>
+    <%= form.text_field :title %>
+  </div>
+
+  <div>
+    <%= form.label :description, style: "display: block" %>
+    <%= form.text_field :description %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

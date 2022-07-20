@@ -1,0 +1,2 @@
+class CodeRetreatSession < ApplicationRecord
+end
