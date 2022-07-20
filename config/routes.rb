@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :technologies
   resources :code_retreat_sessions
   resources :users
   get 'hello/world'
