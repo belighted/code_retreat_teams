@@ -10,7 +10,7 @@ export class Routes extends React.Component {
     render = () => {
         return (
             <Routes>
-                <Route exact path='/session-show' component={NewParticipation}/>
+                <Route exact path='#session-show' component={NewParticipation}/>
                 <Route exact path='/session-new' component={NewSession}/>
                 <Route exact path='/session-show' component={ShowSession}/>
             </Routes>

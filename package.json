@@ -15,8 +15,8 @@
     "remount": "^0.11.0"
   },
   "scripts": {
-    "build": "esbuild app/javascript/*.* --bundle --sourcemap --outdir=app/assets/builds --public-path=assets",
-    "build-windows": "esbuild app/javascript/application.js --bundle --sourcemap --outdir=app/assets/builds --public-path=assets --watch"
+    "build": "esbuild app/javascript/*.* --bundle --sourcemap --outdir=app/assets/builds --public-path=assets --loader:.js=jsx",
+    "build-windows": "esbuild app/javascript/application.js --bundle --sourcemap --outdir=app/assets/builds --public-path=assets --watch --loader:.js=jsx"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.7",

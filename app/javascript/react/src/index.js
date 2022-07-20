@@ -1,6 +1,8 @@
-import { define } from 'remount'
-// import Hello from "./components/Hello"
-import App from "./App"
+import React from 'react';
+import ReactDOM from "react-dom/client";
+import App from "./App";
 
-// define({ 'hello-component': Hello })
-define({ 'app-component': App })
+const root = ReactDOM.createRoot(
+  document.getElementById("root")
+);
+root.render(<App />);
