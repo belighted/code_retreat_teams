@@ -1,0 +1,15 @@
+
+<p style="color: green"><%= notice %></p>
+
+<h1>Teams</h1>
+
+<div id="teams">
+  <% @teams.each do |team| %>
+    <h3><%= team[:technology] %></h3>
+    <ul>
+      <% team[:participants].each do |participant| %>
+        <li><%= participant[:user_name] %></li>
+      <% end %>
+    </ul>
+  <% end %>
+</div>

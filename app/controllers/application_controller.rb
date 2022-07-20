@@ -9,9 +9,7 @@ class ApplicationController < ActionController::Base
     end
       # [{user_id: 1, technology: "Ruby"}]
 
-    teams = TeamBuilderService.new(participants).call
-
-    render json: teams
+    @teams = TeamBuilderService.new(participants).call
   end
 
 end
