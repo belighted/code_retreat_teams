@@ -26,3 +26,9 @@ User.create(name: 'Sergei Krylov', trigram: 'SKR')
 User.create(name: 'Camille Leonard', trigram: 'CLE')
 User.create(name: 'Edgard Arakaki', trigram: 'EAR')
 User.create(name: 'Nicolas Daxhelet', trigram: 'NDA')
+
+s1 = CodeRetreatSession.create(performed_on: Date.today)
+
+User.all.each do |u|
+  Participation.create(user: u, code_retreat_session: s1, primary_technology: Technology.first(2).sample)
+end
