@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :participations
   resources :technologies
   resources :code_retreat_sessions
   resources :users

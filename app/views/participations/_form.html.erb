@@ -1,0 +1,37 @@
+<%= form_with(model: participation) do |form| %>
+  <% if participation.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(participation.errors.count, "error") %> prohibited this participation from being saved:</h2>
+
+      <ul>
+        <% participation.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :user_id, style: "display: block" %>
+    <%= form.text_field :user_id %>
+  </div>
+
+  <div>
+    <%= form.label :code_retreat_session_id, style: "display: block" %>
+    <%= form.text_field :code_retreat_session_id %>
+  </div>
+
+  <div>
+    <%= form.label :primary_technology_id, style: "display: block" %>
+    <%= form.text_field :primary_technology_id %>
+  </div>
+
+  <div>
+    <%= form.label :secondary_technology_id, style: "display: block" %>
+    <%= form.text_field :secondary_technology_id %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

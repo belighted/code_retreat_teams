@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  user: one
+  code_retreat_session: one
+  primary_technology: one
+  secondary_technology: one
+
+two:
+  user: two
+  code_retreat_session: two
+  primary_technology: two
+  secondary_technology: two
