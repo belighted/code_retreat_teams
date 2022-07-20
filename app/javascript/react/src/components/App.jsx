@@ -1,13 +1,17 @@
-import * as React from 'react'
-import * as ReactDOM from 'react-dom'
+import React from 'react';
+import ReactDOM from 'react-dom';
+import { BrowserRouter as Router } from 'react-router-dom';
 
-const App = () => {
-  return (<div>THIS IS THE APP!!!!</div>)
-}
+import '../index.css'
 
-// Use it if you don't plan to use "remount"
-// document.addEventListener('DOMContentLoaded', () => {
-// ReactDOM.render(<Hello />, document.getElementById('hello'))
-// })
+import { Routes } from '../routes/routes';
 
-export default App
+// # MAIN
+ReactDOM.render(
+  <Provider>
+    <Router>
+      <Routes/>
+    </Router>
+  </Provider>,
+  document.getElementById('root')
+);
